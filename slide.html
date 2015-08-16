@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	
+<h2>100% CSS Slider</h2>
+<div class="wrap">
+<ul>
+	<li><a href="#">
+		<img src="img/1.jpg" alt="">
+		<h5>30 Dyas To learn Css</h5>
+	</a></li>
+	<li><a href="#">
+		<img src="img/2.jpg" alt="">
+		<h5>30 Dyas To learn Css</h5>
+	</a></li>
+	<li><a href="#">
+		<img src="img/3.jpg" alt="">
+		<h5>30 Dyas To learn Css</h5>
+	</a></li>
+	<li><a href="#">
+		<img src="img/2.jpg" alt="">
+		<h5>30 Dyas To learn Css</h5>
+	</a></li>
+	<li><a href="#">
+		<img src="img/3.jpg" alt="">
+		<h5>30 Dyas To learn Css</h5>
+	</a></li>
+</ul>
+
+</div>
+
+
+
+
+<style>
+body {
+	width:300px;
+	margin: auto;
+	text-align: center;
+}
+.wrap {
+	width: 300px;
+	overflow: hidden;
+}
+	img {
+		width: 300px;
+		height: 300px;
+	}
+	ul , li {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+
+	li {
+		float: left;
+		list-style: none;
+		position: relative;
+		
+	}
+ul{
+		width: 10000px;
+		position: relative;
+		-webkit-animation: slide 20s;
+		-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function: ease-out;
+
+		
+	}
+	ul:hover, ul:hover h5{
+		-webkit-animation-play-state:paused;
+	}
+li h5 {
+	width: 100%;
+	position: absolute;
+	bottom: 4px;
+	background: rgba(0,0,0,.3);
+	color:white;
+	padding: 10px 0px;
+	margin-bottom: 0;
+	-webkit-animation: headings 20s;
+	-webkit-animation-iteration-count:infinite;
+		-webkit-animation-timing-function: ease-out;
+}
+
+
+@-webkit-keyframes 'slide' {
+	10%{
+		left:0;
+	}
+	15%,30%{
+		left: -300px;
+	}
+	35%,50% {
+		left: -600px;
+	}
+	55%,70%{
+		left: -900px;
+	}
+	75%,90%{
+		left: -1200px;
+	}
+	93%{
+		left: 0px;
+	}
+}
+
+
+@-webkit-keyframes 'headings' {
+	10%,15%,30%,35%,50%,55%,70%,75%,90% {
+		bottom: 4px;
+	}
+	13%,33%,53%,73%,93% {
+		bottom: -100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</body>
+</html>
